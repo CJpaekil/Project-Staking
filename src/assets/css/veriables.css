@@ -1,0 +1,96 @@
+:root {
+  --primary: #f6ce0e;
+  --black: #000;
+  --white: #fff;
+  --skyBlue: #11b0c8;
+  --color1: #7eacff;
+  --color2: #f5c27b;
+  --color3: #62f5d1;
+  --color4: #00a478;
+  --color5: #e24c4b;
+  --color6: #508ff4;
+  --gray-bg: #F7F7F7;
+  --mainFont: "AvertaStd-Regular";
+  --semiBold: "AvertaStd-Semibold";
+  --dmFont: "DM Sans", sans-serif;
+  --amitLight: "Conv_Ambit-Light";
+  --amitReg: "Conv_Ambit-Regular";
+  --amitSemi: "Conv_Ambit-SemiBold";
+  --amitBold: "Conv_Ambit-Bold";
+  --amitBlack: "Conv_Ambit-Black";
+  --outFut: "Conv_Outrun future";
+}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("../fonts/AvertaStd-Regular.eot");
+  src: url("../fonts/AvertaStd-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvertaStd-Regular.woff2") format("woff2"),
+    url("../fonts/AvertaStd-Regular.woff") format("woff"),
+    url("../fonts/AvertaStd-Regular.ttf") format("truetype"),
+    url("../fonts/AvertaStd-Regular.svg#AvertaStd-Regular") format("svg");
+}
+@font-face {
+  font-family: "AvertaStd-Semibold";
+  src: url("../fonts/AvertaStd-Semibold.eot");
+  src: url("../fonts/AvertaStd-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvertaStd-Semibold.woff2") format("woff2"),
+    url("../fonts/AvertaStd-Semibold.woff") format("woff"),
+    url("../fonts/AvertaStd-Semibold.ttf") format("truetype"),
+    url("../fonts/AvertaStd-Semibold.svg#AvertaStd-Semibold") format("svg");
+}
+
+@font-face {
+  font-family: "Conv_Ambit-SemiBold";
+  src: url("../fonts/Ambit-SemiBold.eot");
+  src: local("☺"), url("../fonts/Ambit-SemiBold.woff") format("woff"),
+    url("../fonts/Ambit-SemiBold.ttf") format("truetype"),
+    url("../fonts/Ambit-SemiBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Ambit-Bold";
+  src: url("../fonts/Ambit-Bold.eot");
+  src: local("☺"), url("../fonts/Ambit-Bold.woff") format("woff"),
+    url("../fonts/Ambit-Bold.ttf") format("truetype"),
+    url("../fonts/Ambit-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Ambit-Regular";
+  src: url("../fonts/Ambit-Regular.eot");
+  src: local("☺"), url("../fonts/Ambit-Regular.woff") format("woff"),
+    url("../fonts/Ambit-Regular.ttf") format("truetype"),
+    url("../fonts/Ambit-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Ambit-Light";
+  src: url("../fonts/Ambit-Light.eot");
+  src: local("☺"), url("../fonts/Ambit-Light.woff") format("woff"),
+    url("../fonts/Ambit-Light.ttf") format("truetype"),
+    url("../fonts/Ambit-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Ambit-Black";
+  src: url("../fonts/Ambit-Black.eot");
+  src: local("☺"), url("../fonts/Ambit-Black.woff") format("woff"),
+    url("../fonts/Ambit-Black.ttf") format("truetype"),
+    url("../fonts/Ambit-Black.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_Outrun future";
+  src: url("../fonts/Outrun future.eot");
+  src: local("☺"), url("../fonts/Outrun future.woff") format("woff"),
+    url("../fonts/Outrun future.ttf") format("truetype"),
+    url("../fonts/Outrun future.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

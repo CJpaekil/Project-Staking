@@ -1,0 +1,111 @@
+@import "../../custom.scss";
+
+.modal-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    @media screen and (max-width: $mobile) {
+        padding: 0 15px;
+    }
+    &.show-modal{
+        opacity: 1;
+        visibility: visible;
+        z-index:99;
+        pointer-events: auto;
+        transition: all 0.5s ease;
+    }
+    .close{
+        position: sticky;
+        top: 6px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        display: block;
+        float: right;
+        margin-right: 0;
+        background: #fff;
+        margin-top: -30px;
+        &:hover{
+            transform: rotate(-90deg);
+            transition: all 0.5s ease;
+        }
+    }
+    h3{
+        clear: both;
+        width: 100%;
+        font-weight: bold;
+        color: var(--text-color);
+        text-align: left;
+        font-family: AvertaStd;
+        font-size: 32px;
+        line-height: 100%;
+        margin-bottom: 20px;
+        padding-right: 30px;
+        &:empty{
+            display: none;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 24px;
+        }
+    }
+    .modal-main{
+        position: relative;
+        max-width: 434px;
+        min-width: 434px;
+        max-height: 90vh;
+        min-height: 45px;
+        box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.05);
+        overflow: auto;
+        overflow-x: hidden;
+        padding: 25px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        @media screen and (max-width: $mobile) {
+            max-width: 370px;
+            min-width: 1px;
+            max-height: 90vh;
+            min-height: 15px;
+            padding: 15px;
+            width: 100%;
+        }
+    }
+    .active-button {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        &.center{
+            justify-content: center;
+        }
+        &.left{
+            justify-content: flex-start;
+        }
+        &.right{
+            justify-content: flex-end;
+        }
+        .button{
+            margin:0 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            button{
+                font-size: 16px;
+                padding: 6px 30px;
+            }
+        }
+    }
+}

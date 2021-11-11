@@ -1,0 +1,89 @@
+@import "../../custom.scss";
+
+.wallet_connected {
+    max-width: 149px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    @media screen and (max-width: $tablet) {
+        max-width: 160px;
+    }
+    @media screen and (max-width: $mobile) {
+        max-width: 115px;
+        margin-right: 25px;
+    }
+    p {
+
+        font-size: 14px;
+        color: var(--primary);
+        padding: 13px 28px;
+        border: 1px solid var(--primary);
+        font-family: var(--semiBold);
+        margin: 0;
+        border-radius: 15px;
+        padding: 12.5px;
+        position: relative;
+        text-indent: 18px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            transform: translateY(-50%);
+            background-color: #00A478;            ;
+            border-radius: 50px;
+            @media screen and (max-width: $mobile) {
+                left: 10px;
+                height: 8px;
+                width: 8px;
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            border-radius: 12px;
+            padding: 10px 5px;
+            text-indent: 10px;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 11px;
+        }
+    }
+    .Wallet-Connect,
+    .Wallet-NotConnect{
+        display: none;
+    }
+    .Wallet-NotConnect{
+        p{
+            &::before {
+                background-color: #D8180C;
+            }
+        }
+    }
+    &.CWNameTrue{
+        .Wallet-Connect{
+            display: block;
+        }
+    }
+    &.CWNameFalse{
+        .Wallet-NotConnect{
+            display: block;
+        }
+    }
+    
+}
+
+.connect-wallet-popup .click-btn{
+    color: var(--primary);
+}
+
+.connect-wallet-login-border{
+    border-radius: 30px;
+    border: 1px solid #C4C4C4;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.connect-wallet-login-border{
+    cursor: pointer;
+}
